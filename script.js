@@ -97,3 +97,23 @@ var not21 = arrayOfPersons.filter(function(person) {
 });
   
 console.log(not21);
+
+//   Find.Index() - First property that passes our test will return their array spot.
+
+const ages = [14, 55, 88, 23];
+
+function checkAge(age) {
+  return age > 30;
+}
+
+console.log(ages.findIndex(checkAge)); // 1
+
+//    Find() - First property that passes our test will be returned.
+
+const mathScores = [95, 84, 63, 100];
+
+function checkPass(mathScores) {
+  return mathScores > 70;
+}
+
+console.log(mathScores.find(checkPass)); // 95
